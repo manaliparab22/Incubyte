@@ -1,0 +1,49 @@
+	############################################################################
+	Project Title
+	Incubyte - Verification of Compose Email
+	############################################################################
+	
+	a.Automation software and reporting
+	To automate Compose functionality via web application,I have chosen Selenium for Automation purpose and Java as
+	the language with Cucumber. It uses Gherkin langauge which is easy to understand for all the stakeholders.
+	For execution part, JUnit is used and Extent Reports for generating reports.
+	
+	############################################################################
+	b.Installation & Execution Steps
+	
+	1.Download Zip file and Unzip it to your Workspace directory
+	2.Install Java and Eclipse[prefer latest one] 
+	3.Open Eclipse > File > Import projects existing Workspace directory
+	4.Expand and Open > com.gmail.stepdefinitions.TestRunnerGmail.java file 
+	5.Run as > Junit Test 
+	6.After execution Report will be generated - under Incubyte/reports/GmailExtentReportResults.html
+	
+	############################################################################
+	c.Other information
+	
+	Folder Structure >
+	1.Testdata is under src/main/resources/TestDataFiles/GmailTestdata.xls
+	
+	It has one scenario and uses first sheet.
+	User can change this file according to different testdata as when required
+	
+	2.Testcase Scripts is under Step Definition file
+	Common functions are placed in Utility and Common Helper file
+	
+	We have merged page objects i.e locators in scripts,for future enhancements Page Object Model can also be followed
+		
+	2.Config files is under src/main/resources/Configs/Configs.properties file
+	
+	It contains URL, Browser , Testdata file name, Username and password details
+	User can change this file according to different configurations
+	
+	3.Feature file is under resources/Features/VerifyComposeFunction.feature file
+	
+	It contains four scenarios written in Gherkin.
+	
+	4.Extend Reports will get generated under - Incubyte/GmailExtentReportResults.html
+	
+	It will shows Pass/Fail Testcase with Total Steps, Time taken
+	
+	
+	
